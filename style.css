@@ -1,0 +1,330 @@
+@font-face{
+    font-family: 'Byekan';
+    font-weight: normal;
+    src: url(assets/fonts/Byekan.ttf);
+}
+@font-face{
+    font-family: 'Byekan';
+    font-weight: bold;
+    src: url(assets/fonts/ByekanBold.ttf);
+}
+*{
+    font-family: 'Byekan';
+    transition: 0.5s;
+}
+body{
+    margin: 0px;
+    padding:0px;
+}
+@keyframes animatetop {
+    from {margin-top: -50px; opacity: 0}
+    to {margin-top: 10%; opacity: 1}
+  }
+
+.guide_toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#guide{
+    z-index: -1;
+    width: 101%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mynavbar{
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-bottom: 10px;
+    z-index: 10000;
+}
+.mynavbar h2{
+    margin-top: 15px;
+    margin-right: 60px;
+    font-weight: bold;
+    color: #294187;
+    float: right;
+}
+.mynavbar a{
+    float: right;
+    color: #212529;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+.mynavbar a:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+}
+.ilustraion{
+    width: 530px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+}
+.ilustraion img{
+    width: 100%;
+}
+.ilustraion h1{
+    position: absolute;
+    top: 51%;
+    left: 12%;
+    z-index: 100;
+}
+.ilustraion p{
+    position: absolute;
+    top: 63%;
+    left: 25%;
+}
+.ilustraion .line{
+    width: 120px;
+    height: 2px;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    top: 63%;
+    left: 23%;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    min-height: 900px;
+    position: relative;
+    background: linear-gradient(rgb(219, 219, 219),rgb(255,255,255));
+}
+.background-pic{
+    position: absolute;
+    width: 600px;
+    top: 55%;
+    right: 0;
+    opacity: 0.5;
+}
+.about{
+    color: #212529;
+    position: absolute;
+    width: 50%;
+    text-align: right;
+    right: 76px;
+    top: 120px;
+    z-index: 5000;
+}
+.about h1{
+    font-size: 31px;
+}
+.about p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+}
+.about strong{
+    color: #294187;
+}
+.about button{
+    font-size: 25px;
+    margin-top: 21px;
+    margin-right: 58px;
+    padding: 7px 53px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: black;
+    background: rgb(235, 235, 235);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);    
+}
+.about button:hover{
+    background: linear-gradient(155.13deg, #FD9F11 30.63%, #FECE86 145.78%);
+    transform: scale(1.05);
+    color: white;
+}
+.container{
+    width: 90%;
+    margin:auto;
+    text-align: center;
+    margin-top: 75px;
+}
+.container .title{
+    color: #294187;
+}
+.container .line{
+    width: 150px;
+    height: 2px;
+    background: #F8C724;
+    margin:auto;
+}
+.posts{
+    margin-top: 25px;
+}
+.post{
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 300px;
+    width: 30%;
+    background-color: teal;
+    float: left;
+    margin: 10px 15px;
+}
+.post img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post-body{
+    position: absolute;
+    color: white;
+    right: 0;
+    top: 76%;
+    text-align: center;
+    width: 100%;
+}
+.post:hover .post-body{
+    top: 55%;
+}
+.post-body button{
+    padding:5px 15px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    background: white;
+    color: #294187;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.post-body button:hover{
+    color: white;
+    background: #294187;
+    
+}
+.post:hover img{
+    transform: scale(1.2);
+}
+.post-back{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0),rgb(0,0,0));
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.navbar-bg{
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .player{
+      background-color: black;
+      width: 100%;
+      margin-top: 60px;
+      height: 40vh;
+  }
+  .bars{
+      display: none !important;
+      position: absolute;
+      color: #294187;
+      font-size: 20px;
+      right: 25px;
+      top: 20px;
+      cursor: pointer;
+  }
+  .bars:hover{
+      color: #888;
+  }
+  @media only screen and (max-width:790px){
+      .ilustraion{
+         display: none;
+      }
+      .mynavbar a{
+          display: none;
+      }
+      .bars{
+          display: block !important;
+      }
+      .mynavbar h2{
+          font-size: 20px;
+      }
+      .page1{
+          margin-top: -30px;
+      }
+      .about{
+          width: 300px;
+          position: relative;
+          text-align: center;
+          right: -50%;
+          transform: translateX(-50%);
+      }
+      .about button{
+          margin: 21px auto;
+      }
+      .posts{
+          margin-left: 0px;
+      }
+  }
+  @media only screen and (max-width:1000px){
+      .post{
+          width: 45%;
+      }
+      .posts{
+          width: 95%;
+          margin-left: 8%;
+      }
+  }
+  @media only screen and (max-width:702px){
+    .post{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .posts{
+        margin-left: 2%;
+    }
+  }

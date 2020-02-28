@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>وبلاگ ویدیو بیمتون</title>
+    <!--- style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!--- font-awoseme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="mynavbar">
+        
+        <h2>ویدیو بلاگ بیمتون</h2>
+        <i class="bars fas fa-bars"></i>
+        <a href="#">خانه</a>
+        <a href="#">بیمه انفرادی</a>
+        <a href="#">بیمه سازمانی</a>
+        <a href="#">بیمه های همکار</a>
+    </div>
+
+    <div class="ilustraion">
+        <img src="assets/images/ilustraion.svg" />
+        <h1>همه آنچه باید بدانید</h1>
+        <div class="line"></div>
+        <p>با بهترین کیفیت</p>
+    </div>
+    <div class="page1">
+        <div class="about">
+            <h1>هدف از ویدیو بلاگ های <strong>بیمتون</strong> چیست ؟</h1>
+            <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+                اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+            <button onclick="scrollToElement('posts')">بزن بریم</button>
+        </div>
+        <img class="background-pic" src="assets/images/family.png"></img>
+    </div>
+    <div class="container" id="posts">
+        <h3 class="title">آموزش های ویدیویی</h3>
+        <div class="line"></div>
+        <div class="posts">
+            <div class="post">
+                <img src="assets/images/post1.jpg" alt="">
+                <div class="post-back"></div>
+                <div class="post-body">
+                    <h2>چرا و چگونه بیمه بگیریم</h2>
+                    <button onclick="toggle_modal()">دیدن ویدیو</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="assets/images/post1.jpg" alt="">
+                <div class="post-back"></div>
+                <div class="post-body">
+                    <h2>چرا و چگونه بیمه بگیریم</h2>
+                    <button>دیدن ویدیو</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="assets/images/post1.jpg" alt="">
+                <div class="post-back"></div>
+                <div class="post-body">
+                    <h2>چرا و چگونه بیمه بگیریم</h2>
+                    <button>دیدن ویدیو</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="assets/images/post1.jpg" alt="">
+                <div class="post-back"></div>
+                <div class="post-body">
+                    <h2>چرا و چگونه بیمه بگیریم</h2>
+                    <button>دیدن ویدیو</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="assets/images/post1.jpg" alt="">
+                <div class="post-back"></div>
+                <div class="post-body">
+                    <h2>چرا و چگونه بیمه بگیریم</h2>
+                    <button>دیدن ویدیو</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggle_modal()" >&times;</span>
+            <div class="player">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

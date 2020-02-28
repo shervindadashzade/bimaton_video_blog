@@ -20,6 +20,10 @@ body{
     from {margin-top: -50px; opacity: 0}
     to {margin-top: 10%; opacity: 1}
   }
+@keyframes animateright {
+    from {margin-right: -200px;}
+    to {margin-right: 0;}
+  }
 
 .guide_toggle{
     position: absolute;
@@ -328,3 +332,43 @@ body{
         margin-left: 2%;
     }
   }
+.menu{
+    background: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    animation-name: animateright;
+    animation-duration: 0.4s;
+}
+.menu .items{
+    margin-top: 0px;
+}
+.menu .item{
+cursor: pointer;
+text-align: center;
+padding: 20px;
+font-size: 15px;
+}
+.menu .item:hover{
+    background-color: #294187;
+    color: white;
+}
+.menu h3{
+    color: white;
+    text-align: center;
+    background-color: #294187;
+    padding:20px;
+    margin-top: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.back{
+    float: right;
+    margin: 20px;
+    color: white;
+    margin-top: 28px;
+}
+.back:hover{
+    color: #aaa;
+}

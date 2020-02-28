@@ -14,15 +14,26 @@
 
 <body>
     <div class="mynavbar">
-        
         <h2>ویدیو بلاگ بیمتون</h2>
-        <i class="bars fas fa-bars"></i>
+        <i onclick="toggle_menu()" class="bars fas fa-bars"></i>
         <a href="#">خانه</a>
         <a href="#">بیمه انفرادی</a>
         <a href="#">بیمه سازمانی</a>
         <a href="#">بیمه های همکار</a>
     </div>
 
+    <div class="modal" id="menu">
+        <div class="menu">
+            <i onclick="toggle_menu()" class="back fas fa-arrow-right"></i>
+            <h3>ویدیو بلاگ بیمتون</h3>
+            <div class="items">
+            <div class="item">خانه</div>
+            <div class="item">بیمه انفرادی</div>
+            <div class="item">بیمه سازمانی</div>
+            <div class="item">بیمه های همکار</div>
+        </div>
+        </div>
+    </div>
     <div class="ilustraion">
         <img src="assets/images/ilustraion.svg" />
         <h1>همه آنچه باید بدانید</h1>

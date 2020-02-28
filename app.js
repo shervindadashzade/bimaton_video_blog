@@ -1,4 +1,7 @@
 var modal = document.getElementById("post-modal");
+var menu = document.getElementById("menu");
+
+menu_show = false;
 show = false;
 
 function toggle_modal(){
@@ -23,4 +26,13 @@ window.onscroll = function() { this.scrollFunction() };
 function scrollToElement(element){
     var el = document.getElementById(element);
     el.scrollIntoView({behavior:"smooth",block:"start"});
+}
+function toggle_menu(){
+    if(menu_show){
+        menu.style.display="none";
+        menu_show = false;
+    }else{
+        menu.style.display="block";
+        menu_show = true;
+    }
 }
